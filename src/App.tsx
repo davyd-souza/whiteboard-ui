@@ -3,7 +3,6 @@ import { useCallback } from 'react'
 import ReactFlow, {
   Background,
   Controls,
-  Node,
   ConnectionMode,
   useEdgesState,
   Connection,
@@ -14,6 +13,7 @@ import 'reactflow/dist/style.css'
 
 // COMPONENT
 import { Square } from './components/nodes/Square'
+import { Pill } from './components/nodes/Pill'
 import { DefaultEdge } from './components/edges/DefaultEdge'
 import * as Toolbar from '@radix-ui/react-toolbar'
 
@@ -23,6 +23,7 @@ import { zinc } from 'tailwindcss/colors'
 // VARIABLE
 const NODE_TYPES = {
   square: Square,
+  pill: Pill,
 }
 
 const EDGE_TYPES = {
@@ -52,6 +53,21 @@ export function App() {
     ])
   }
 
+  function addPillNode() {
+    setNodes((prevNodes) => [
+      ...prevNodes,
+      {
+        id: crypto.randomUUID(),
+        type: 'pill',
+        position: {
+          x: 750,
+          y: 350,
+        },
+        data: {},
+      },
+    ])
+  }
+
   return (
     <div className='h-screen w-screen'>
       <ReactFlow
@@ -69,10 +85,14 @@ export function App() {
         <Controls />
       </ReactFlow>
 
-      <Toolbar.Root className='fixed bottom-10 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg border border-zinc-300 px-8 h-20 w-96 overflow-hidden'>
+      <Toolbar.Root className='flex gap-5 fixed bottom-10 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-lg border border-zinc-300 px-8 h-20 w-96 overflow-hidden'>
         <Toolbar.Button
           onClick={addSquareNode}
           className='w-32 h-32 bg-yellow-400 mt-6 rounded transition-transform hover:-translate-y-3'
+        />
+        <Toolbar.Button
+          onClick={addPillNode}
+          className='w-12 h-32 bg-violet-400 mt-6 rounded-3xl transition-transform hover:-translate-y-3'
         />
       </Toolbar.Root>
     </div>
