@@ -3,8 +3,9 @@
   Organize your ideas to diagrams!
 </p>
 <p align="center">
-  <img src="" alt="Image of application's board" />
+  <img src="https://user-images.githubusercontent.com/54182110/223593160-1e9ba987-8e7f-428b-b8af-5cba0413ec84.png" alt="Image of application's board" />
 </p>
+
 <p align="center">
   <a href="#tech">Technologies</a> •
   <a href="#use">How to Use</a> •
