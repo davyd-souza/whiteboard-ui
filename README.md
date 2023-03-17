@@ -15,7 +15,7 @@
 
 ---
 
-<h2 id="tech">🚀 Technologies </h2>
+<h2 id="tech">🚀 Technologies</h2>
 
 <a href="https://reactjs.org/" target="_blank">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -30,9 +30,9 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
 </a>
 
-<h2 id="objective">🎯 Objective </h2>
+<h2 id="objective">🎯 Objective</h2>
 
-<p>This project was made in order to learn about React Flow library, in the process creating a cool project where you can organize your ideas into diagrams and later be able to save these diagrams and use them externally.</p>
+<p>This project was made in order to learn about React Flow library, while in the process creating a cool project where you can organize your ideas into diagrams and later be able to save these diagrams and use them externally.</p>
 
 <p>I have plans to add more features to this project as I progress with my studies. You can check on <a href="#ideas">improvment ideas</a> section.</p>
 
@@ -60,7 +60,7 @@
   - [ ] Cone
   - [ ] Parallelogram
 
-<h2 id="use">ℹ️ How to Use </h2>
+<h2 id="use">ℹ️ How to Use</h2>
 
 Before cloning the repository into your machine you'll need: [Git](https://git-scm.com) and [NodeJS](https://nodejs.org/en/). Also it is good to have a code editor like [VSCode](https://code.visualstudio.com/).
 
@@ -80,7 +80,7 @@ $ npm start   # or
 $ yarn dev
 ```
 
-<h2 id="author">👤 Author </h2>
+<h2 id="author">👤 Author</h2>
 
 <p>
   Made with 💛 by Davyd Souza </br>
